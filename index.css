@@ -1,0 +1,349 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 14; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 1100px;
+    margin: 0;
+    border: 1px solid #e9e9e9;
+    box-shadow: 0 0 2px #f0f0f0;
+} 
+
+.main .header {
+    background-image: url("376ed41198f567ab3ee4_931de1b273.jpg");
+    background-size: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .header .subtitle_school {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+    font-size: 30px;
+    color: blue ;
+    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+}
+
+.main .header .title_school {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    font-size: 50px;
+    color: rgb(32, 68, 228);
+    text-shadow: 2px 0 #1d33da;
+}
+
+.main .header>img {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 150px;
+    border-radius: 75px 75px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(27, 27, 221);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu>ul>li>a {
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 25px;
+    color: white;
+}
+
+.menu>ul>li>b {
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 25px;
+    color: white;
+}
+
+.menu>ul>li>a:hover {
+    background-color: underline;
+    color: rgb(231, 179, 131);
+}
+
+.menu>ul>li {
+    margin: 0 5px;
+    position: relative;
+}
+
+.menu>ul>li:hover>.MenuCon {
+    display: block;
+}
+
+.MenuCon {
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 4px 4px 5px rgba(54, 52, 52, 0.86);
+    list-style: none;
+    width: 120px;
+    position: absolute;
+    display: none;
+    background-color:rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.MenuCon>li:last-child>a {
+    border-bottom: none;
+}
+
+.MenuCon>li>a {
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(22, 38, 220);
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-left: 10px;
+    color: black;
+    background-size: 15px 15px;
+}
+
+.MenuCon>li>a:hover {
+    background-size: 15px 15px;
+    color: rgb(68, 36, 232);
+}
+
+.content {
+    width: 100%;
+    min-height: 800px;
+}
+
+.chuchay {
+    width: 100%;
+    height: 30px;
+    border-left: 1px solid #4f4f4f;
+    border-bottom: 1px solid #4f4f4f;
+    border-top: 1px solid #4f4f4f;
+    background-color: #ffffff;
+}
+
+.chuchay>.doan1 {
+    color: rgb(30, 0, 255);
+    position: relative;
+}
+
+.chuchay>.doan1>marquee {
+    position: absolute;
+    top:5px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 3px 0px 3px yellow;
+    width: 830px;
+}
+
+.content article {
+    width: 75%;
+    background-color:#fefafa ;
+    min-height: 800px;
+}
+
+.content article iframe[name=_page] {
+    width: 100%;
+    height: 1200px;
+
+}
+
+article .dong1 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(34, 20, 232);
+    margin-top: 5px;
+    position: relative;
+}
+
+article .dong1>img {
+    width: 100%;
+}
+
+.content aside {
+    width: 25%;
+    background-color: rgba(192, 0, 0, 0.018);
+    min-height: 1150px;
+    float: right;
+}
+
+.search {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: right;
+}
+
+.content aside input[type=search] {
+    width: 100%;
+    padding-left: 10px;
+    border-style: none;
+    border-bottom: 1px solid #4f4f4f;
+    border-top: 1px solid #4f4f4f;
+}
+
+.content aside input:focus {
+    outline: none;  
+}
+
+.content aside button {
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #4f4f4f;
+    border-top: 1px solid #4f4f4f;
+    border-right: 1px solid #4f4f4f;
+}
+
+.content aside button>img {
+    height: 100%;
+}
+
+ .content aside .Khung1 {
+    min-height: 200px;
+    border: 1px solid #dcdcdc;
+}
+
+.content aside .Khung2 {
+    min-height: 200px;
+    border: 1px solid #dcdcdc;
+    padding-bottom: 20px;
+}
+
+.content aside .Khung2 .qc>a>img {
+    width: 274px;
+    margin-top: 10px;
+    border: 1px solid rgba(101, 98, 98, 0.556);
+}
+
+.content aside .qc>a>img:hover {
+    border: 1px solid rgb(0, 0, 255);
+}
+
+.content aside .Khung3 {
+    min-height: 200px;
+    border: 1px solid #dcdcdc;
+} 
+
+ .content aside .BackgroundTinmoi { 
+    background-color: rgb(57, 35, 227);
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.BackgroundTinmoi .tinmoi {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.Danhsachtinmoi {
+    list-style: none;
+}
+
+.Danhsachtinmoi>li {
+    margin: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.136);
+}
+
+.Danhsachtinmoi>li>a {
+    text-decoration:none;
+    display: block;
+    line-height: 30px;
+    padding-left: 35px;
+    background-image: url(./icon01.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 15px;
+    color: blue;
+}
+
+.Danhsachtinmoi>li>a:hover {
+    background-image: url(./icon02.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px;
+    color: blue;
+} 
+
+#fanpage {
+    margin-top: -8px;
+    width: 100%;
+    text-align: center;
+}
+
+#fanpage li>a {
+    color: blue;
+    text-decoration:none;
+    display: block;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+#fanpage li>a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#fanpage>iframe {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+    min-height: 50px;
+    background-color: blue;
+    text-align: left;  
+    color: white;    
+    padding: 15px 5px;
+}
+
+footer img {
+    float: right;
+    margin: 5px 40px;
+}
+footer p {
+    padding: 3px 20px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: rgb(42, 95, 179);
+}
+
+
